@@ -4,100 +4,104 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <title>Ordering Pizza Form</title>
   </head>
   <body>
-    <div class="container">
-      <div class="formContainer">
-        <form id="form">
-          <h1>Order Your pizza</h1>
-          <div class="info">
-            <label for="customerName"> Your Name : </label>
-            <input type="text" id="customerName" required />
-          </div>
+    <h1>Order Pizza you love the easiest way</h1>
 
-          <h3>Select Pizza</h3>
-          <div>
-            <label for="pizza2"> Pizza for two</label>
-            <span> €7.50 </span>
-            <input type="radio" name="pizza" id="for2" />
-          </div>
-          <div>
-            <label for="pizza4"> Pizza for four</label>
-            <span> €10.50 </span>
-            <input type="radio" name="pizza" id="for4" />
-          </div>
-          <div>
-            <label for="pizza6"> Pizza for six </label>
-            <span> €12.50 </span>
-            <input type="radio" name="pizza" id="for6" />
-          </div>
-          <div>
-            <label for="pizza8"> Pizza for eight</label>
-            <span> €15.50 </span>
-            <input type="radio" name="pizza" id="for8" />
-          </div>
+    <form>
+      <h2>Please enter your name.</h2>
 
-          <div>
-            <h3>Select ingredients</h3>
-            <div>
-              <label>kana </label>
-              <input type="checkbox" id="kana" />
-            </div>
-            <div>
-              <label>kala </label>
-              <input type="checkbox" id="kala" />
-            </div>
-            <div>
-              <label>Ananas </label>
-              <input type="checkbox" id="Ananas" />
-            </div>
-            <div>
-              <label>Tomato </label>
-              <input type="checkbox" id="Tomato" />
-            </div>
-            <div>
-              <label>Cheese</label>
-              <input type="checkbox" id="Chees" />
-            </div>
-            <div>
-              <label>kebab </label>
-              <input type="checkbox" id="kebab" />
-            </div>
-            <div>
-              <label>Salami </label>
-              <input type="checkbox" id="salami" />
-            </div>
-            <div>
-              <label>kanamuna </label>
-              <input type="checkbox" id="kanamuna" />
-            </div>
-            <div>
-              <label>Tonnikala </label>
-              <input type="checkbox" id="Tonnikala" />
-            </div>
-            <div>
-              <label>Mozzarella</label>
-              <input type="checkbox" id="Mozzarella" />
-            </div>
-          </div>
+      <input type="text" id="Name" />
 
-          <div>
-            <h3>Choose your delivery method</h3>
-            <label for="deliveryMethod"> </label>
-            <select id="deliveryMethod" name="deliveryMethod">
-              <option>Select</option>
-              <option id="Home delivery" value="5">Home delivery +5€</option>
-              <option id="eat in" value="0">Eat in +0€</option>
-              <option id="pickup" value="0">Pick up +0€</option>
-            </select>
-          </div>
-          <button type="submit">Order</button>
-        </form>
+      <h2>What is the size of pizza you want?</h2>
+
+      <div>
+        <label for="css">pizza for 2 people 7.5€</label>
+        <input type="radio" id="pizza2" name="pizza" value="one" checked />
       </div>
-      <div class="orderdetails" id="orderdetails"></div>
-    </div>
-    <script src="index.js"></script>
+      <div>
+        <label for="css1">pizza for 4 people 10.5€</label>
+        <input type="radio" id="pizza4" name="pizza" value="two" />
+      </div>
+
+      <div>
+        <label for="css2">pizza for 6 people 12.50€</label>
+        <input type="radio" id="pizza6" name="pizza" value="three" />
+      </div>
+
+      <div>
+        <label for="css3">pizza for 8 people 15.50€</label>
+        <input type="radio" id="pizza8" name="pizza" value="four" />
+      </div>
+
+      <h2>Please select topping</h2>
+      <p>(First four are free, each extra will cost 0.5€.)</p>
+      
+
+      <div>
+        <label for="css4">Pepporoni</label>
+        <input type="checkbox" id="topping1" name="topping" value="Pepporoni" />
+      </div>
+
+      <div>
+        <label for="css5">Sausage</label>
+        <input type="checkbox" id="topping2" name="topping" value="Sausage" />
+      </div>
+
+      <div>
+        <label for="css6">Mushrooms</label>
+        <input type="checkbox" id="topping3" name="topping" value="Mushrooms" />
+      </div>
+
+      <div>
+        <label for="css7">Bacons</label>
+        <input type="checkbox" id="topping4" name="topping" value="Bacons" />
+      </div>
+
+      <div>
+        <label for="css8">Onions</label>
+        <input type="checkbox" id="topping5" name="topping" value="Onions" />
+      </div>
+
+      <div>
+        <label for="css9">Extra Cheese</label>
+        <input type="checkbox" id="topping6" name="topping" value="Extra Cheese" />
+      </div>
+
+      <div>
+        <label for="css10">Chicken</label>
+        <input type="checkbox" id="topping7" name="topping" value="Chicken" />
+      </div>
+
+      <div>
+        <label for="css11">Olive</label>
+        <input type="checkbox" id="topping8" name="topping" value="Olives" />
+      </div>
+
+      <div>
+        <label for="css12">Tomatoes</label>
+        <input type="checkbox" id="topping9" name="topping" value="Tomatoes" />
+      </div>
+
+      <div>
+        <label for="css12">Pineapple</label>
+        <input
+          type="checkbox"
+          id="topping10"
+          name="topping10"
+          value="topping10"
+        />
+      </div>
+
+     
+    <script src="main.js"></script>
   </body>
 </html>
